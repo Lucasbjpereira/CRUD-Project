@@ -21,3 +21,8 @@
 .item-nav:hover{
     background-color: #281a54;
 }
+
+.content{
+    padding: 16px;
+    background-color: white;
+}
