@@ -1,13 +1,13 @@
 <mat-sidenav-container class="container">
     <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64">
         <mat-nav-list class="nav-list">
-            <a class="item-nav" mat-list-item routerLink="/">
+            <a class="item-nav" mat-list-item routerLink="/"> <!-- Adicionando link da rota (já está configurado no app-routing.module.ts) -->
                 <i class="material-icons">
                     home
                 </i>
                 Início
             </a>
-            <a class="item-nav" mat-list-item routerLink="/products">
+            <a class="item-nav" mat-list-item routerLink="/products"> <!-- Adicionando link da rota (já está configurado no app-routing.module.ts) -->
                 <i class="material-icons">
                     storefront
                 </i>
@@ -16,8 +16,6 @@
         </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content class="content">
-        <!-- <app-home></app-home> -->
-        <!-- <app-product-crud></app-product-crud> -->
-        <router-outlet></router-outlet>
+        <router-outlet></router-outlet> <!-- Adicionando rotas -->
     </mat-sidenav-content>
 </mat-sidenav-container>

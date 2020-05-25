@@ -1,3 +1,5 @@
+// Importações das bibliotecas usadas
+
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
@@ -16,16 +18,18 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { HomeComponent } from './views/home/home.component';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
-import { RedDirective } from './directives/red.directive';
-import { ForDirective } from './directives/for.directive';
+import { RedDirective } from './directives/red.directive'; //diretiva de exemplo adicionada
+import { ForDirective } from './directives/for.directive'; //diretiva de exemplo adicionada
 import { ProductCreateComponent } from './components/products/product-create/product-create.component';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
+import { HttpClientModule } from '@angular/common/http'; //Modulo capaz de fazer requisições http
 
 
-import { HttpClientModule } from '@angular/common/http';
-
-
-@NgModule({
-  declarations: [
+@NgModule({ 
+  declarations: [ //Declarações de componentes
     AppComponent,
     HeaderComponent,
     FooterComponent,
@@ -36,7 +40,7 @@ import { HttpClientModule } from '@angular/common/http';
     ForDirective,
     ProductCreateComponent
   ],
-  imports: [
+  imports: [ // Importações das bibliotecas usadas
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -46,7 +50,10 @@ import { HttpClientModule } from '@angular/common/http';
     MatCardModule,
     MatButtonModule,
     MatSnackBarModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

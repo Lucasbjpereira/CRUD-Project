@@ -1,5 +1,6 @@
+//classe de modelo
 export interface Product {
-    id?: number
+    id?: number // "?" seria opcional
     name: string
     price: number
 }

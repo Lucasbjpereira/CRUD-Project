@@ -1,0 +1,18 @@
+Comandos angular cli:
+
+npm i -g @angular/cli = Baixa e instala o angular para a maquina (versão cli);
+
+ng new nomedoprojeto nomedoscomponentes(prefixo) = Cria um projeto angular (se não colocar um prefixo, por padrão o nome dos componentes será app). Após esse comando, o angular fará algumas perguntas, o primeiro, se irá querer adicionar no porjeto as rotas, o segundo, se você irá querer usar CSS, SASS, LESS, etc;
+
+npm start (dentro do projeto angular) = irá abrir o server do angular;
+
+ng add @angular/material = Adiciona a biblioteca de material design do angular, após isso, a instalação fará três perguntas, a primeira, qual seria o template/design do material design, a segunda, se irá aplicar o estilo do design de forma global e o terceiro, se deseja aplicar animações;
+
+(ng generate component nomedocaminho) ou (ng g c nomedocaminho) = Cria um componente com todas as configurações basicas (é criado dentro da pasta src/app por padrão);
+
+(ng generate directives nomedocaminho) ou (ng g d nomedocaminho) = Cria uma diretiva com todas as configurações basicas (As diretivas são marcadores em um elemento DOM (como um atributo) que informam ao Angular para anexar um comportamento especificado a um elemento existente)
+
+(ng generate service nomedocaminho) ou (ng g s nomedocaminho) = Cria um service com todas as configurações basicas (Service é toda a comunicação que um determinado componente irá fazer com o servidor (requisições))
+
+
+

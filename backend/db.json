@@ -14,6 +14,11 @@
       "id": 3,
       "name": "Caneta BIC azul",
       "price:": 8
+    },
+    {
+      "name": "Tetse",
+      "price": "125",
+      "id": 4
     }
   ]
 }

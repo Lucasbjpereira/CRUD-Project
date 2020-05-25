@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-product-crud',
+  selector: 'app-product-crud', // Nome da tag do componente
   templateUrl: './product-crud.component.html',
   styleUrls: ['./product-crud.component.css']
 })

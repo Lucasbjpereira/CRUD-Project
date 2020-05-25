@@ -1,9 +1,9 @@
 import { Directive, OnInit, Input, ViewContainerRef, TemplateRef } from '@angular/core';
 
 @Directive({
-  selector: '[myFor]'
+  selector: '[myFor]' //nome do atributo adicionado em uma tag html
 })
-export class ForDirective implements OnInit {
+export class ForDirective implements OnInit { //OnInit - termo de inicialização da diretiva
 
 
   @Input('myForEm') numbers: number[];
